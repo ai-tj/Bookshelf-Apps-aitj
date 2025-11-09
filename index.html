@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bookshelf Apps</title>
+    <link rel="shortcut icon" href="iconbook.ico" type="image/x-icon" />
+    <link rel="icon" href="iconbook.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="head_bar">
+      <h1 class="head_bar__title">Bookshelf AI</h1>
+      <p class="head_bar__desc">
+        Sebuah Website Sederhana Untuk Pengelolaan Inventaris Buku
+      </p>
+    </header>
+    <main>
+      <section class="input_section">
+        <div class="judul_buku">
+          <h2>Masukkan Buku Baru</h2>
+        </div>
+        <div class="isi_judul">
+          <form id="inputBook">
+            <div class="input">
+              <label for="inputBookTitle">Judul</label>
+              <input id="inputBookTitle" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Penulis</label>
+              <input id="inputBookAuthor" type="text" required />
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Tahun</label>
+              <input id="inputBookYear" type="number" required />
+            </div>
+            <div class="input_inline">
+              <input id="inputBookIsComplete" type="checkbox" />
+              <label for="inputBookIsComplete">Selesai dibaca</label>
+            </div>
+            <button id="bookSubmit" type="submit">Kirim</button>
+          </form>
+        </div>
+      </section>
+      <section class="search_section">
+        <div class="judul_buku">
+          <h2>Cari Buku</h2>
+        </div>
+        <div class="isi_judul">
+          <p>Kata Kunci</p>
+          <form id="searchBook">
+            <input id="searchBookTitle" type="text" />
+            <button id="searchSubmit" type="submit">Cari</button>
+          </form>
+        </div>
+      </section>
+      <section class="book_shelf">
+        <div class="judul_buku">
+          <h2>Yang belum selesai dibaca</h2>
+        </div>
+        <div class="isi_judul">
+          <div id="incompleteBookshelfList" class="book_list"></div>
+        </div>
+      </section>
+      <section class="book_shelf">
+        <div class="judul_buku">
+          <h2>Yang sudah selesai dibaca</h2>
+        </div>
+        <div class="isi_judul">
+          <div id="completeBookshelfList" class="book_list"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>Belajar Membuat Front-End Web Untuk Pemula</h3>
+      <h3>Project Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage</h3>
+      <h3>Audi Ikhsan Tanjung</h3>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
